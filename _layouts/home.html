@@ -1,0 +1,148 @@
+---
+layout: default
+---
+
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br><br>
+    <h4 class="header left dark-text">业务一览</h4>
+
+
+    <br><br>
+
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h1 class="center light-blue-text"><i class="material-icons">help_outline</i></h1>
+          <h5 class="center">网络使用答疑</h5>
+
+          <p class="center medium">1</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block unselectable" onclick="window.open('http://wlbx.xidian.edu.cn')">
+          <h1 class="center light-blue-text"><i class="material-icons">build</i></h1>
+          <h5 class="center">网络故障报修</h5>
+
+          <p class="center medium">2</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h1 class="center light-blue-text"><i class="material-icons">record_voice_over</i></h1>
+          <h5 class="center">答疑服务矩阵</h5>
+
+          <p class="center medium">3</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+          <h5 class="center">网速自助检测</h5>
+
+          <p class="center medium">4</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+          <h5 class="center">User Experience Focused</h5>
+
+          <p class="center medium">5</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+          <h5 class="center">Easy to work with</h5>
+
+          <p class="center medium">6</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="container">
+<div class="section">
+  <div class="row">
+    <div class="carousel carousel-slider center" data-indicators="true" data-namespace="DIVcarouselcarousel-slider1"
+      style="height: 400px;">
+      <div class="carousel-fixed-item center with-indicators">
+        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      </div>
+      <div class="carousel-item red white-text active" href="#one!"
+        style="z-index: 0; opacity: 1; display: block; transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px);">
+        <h2>First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!"
+        style="transform: translateX(0px) translateX(953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
+        <h2>Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!"
+        style="transform: translateX(0px) translateX(-1907.81px) translateZ(0px); z-index: -2; opacity: 1; display: block;">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!"
+        style="transform: translateX(0px) translateX(-953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
+        <h2>Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
+      <ul class="indicators">
+        <li class="indicator-item active"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
+        <li class="indicator-item"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="background: #ddd">
+  <div class="container last-post">
+    <section>
+      <h5>Latest Post</h5>
+      <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link"
+              href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+            {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i
+              class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>
+
+</div>
