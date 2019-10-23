@@ -1,0 +1,12 @@
+title      : scott.cgi
+lang       : zh
+description: 编程、写作、独立游戏和软件制作
+copyright  : © 2018 - 2019 scott.cgi All Rights Reserved
+
+nav:
+ - name: 中文
+   link: /
+ - name: 编程人生
+   link: /pages/coding-life.html
+ - name: En
+   link: /pages/readme-en.html
