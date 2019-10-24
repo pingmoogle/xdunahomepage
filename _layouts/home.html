@@ -133,31 +133,31 @@ layout: default
   </div>
 </div>
 <br><br><br>
-<div class="home container" >
+<div class="home container">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {%- if site.posts.size > 0 -%}
-    <!-- <h2 class="header left dark-text">{{ page.list_title | default: "Posts" }}</h2> -->
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <p>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </p>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  <!-- <h2 class="header left dark-text">{{ page.list_title | default: "Posts" }}</h2> -->
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <p>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </p>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
 
-    
+
   {%- endif -%}
 
 </div>
@@ -165,40 +165,39 @@ layout: default
 
 
 
-  <div class="section">
-    <div class="row">
-      <div class="carousel carousel-slider center" data-indicators="true" data-namespace="DIVcarouselcarousel-slider1"
-        style="height: 400px;">
-        <!-- <div class="carousel-fixed-item center with-indicators">
+<div class="section">
+  <div class="row">
+    <div class="carousel carousel-slider center" data-indicators="true" data-namespace="DIVcarouselcarousel-slider1"
+      style="height: 400px;">
+      <!-- <div class="carousel-fixed-item center with-indicators">
           <a class="btn waves-effect white grey-text darken-text-2">button</a>
         </div> -->
-        <div class="carousel-item blue white-text active center" href="#one!"
-          style="z-index: 0; opacity: 1; display: block; transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px);">
-          <h2>First Panel</h2>
-          <p class="white-text">This is your first panel</p>
-        </div>
-        <div class="carousel-item blue white-text" href="#two!"
-          style="transform: translateX(0px) translateX(953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
-          <h2>Second Panel</h2>
-          <p class="white-text">This is your second panel</p>
-        </div>
-        <div class="carousel-item blue white-text" href="#three!"
-          style="transform: translateX(0px) translateX(-1907.81px) translateZ(0px); z-index: -2; opacity: 1; display: block;">
-          <h2>Third Panel</h2>
-          <p class="white-text">This is your third panel</p>
-        </div>
-        <div class="carousel-item blue white-text" href="#four!"
-          style="transform: translateX(0px) translateX(-953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
-          <h2>Fourth Panel</h2>
-          <p class="white-text">This is your fourth panel</p>
-        </div>
-        <!-- <ul class="indicators">
+      <div class="carousel-item blue white-text active center" href="#one!"
+        style="z-index: 0; opacity: 1; display: block; transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px);">
+        <h2>First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#two!"
+        style="transform: translateX(0px) translateX(953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
+        <h2>Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#three!"
+        style="transform: translateX(0px) translateX(-1907.81px) translateZ(0px); z-index: -2; opacity: 1; display: block;">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!"
+        style="transform: translateX(0px) translateX(-953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
+        <h2>Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
+      <!-- <ul class="indicators">
           <li class="indicator-item active"></li>
           <li class="indicator-item"></li>
           <li class="indicator-item"></li>
           <li class="indicator-item"></li>
         </ul> -->
-      </div>
     </div>
   </div>
-  </div>
+</div>

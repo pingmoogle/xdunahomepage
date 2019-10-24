@@ -80,7 +80,7 @@
     @while $i <= $num-cols {
       $perc: unquote((100 / ($num-cols / $i)) + "%");
       &.s#{$i} {
-        width: $perc;
+        width: 50%;
         @include reset-offset;
       }
       $i: $i + 1;
@@ -90,8 +90,11 @@
     @while $i <= $num-cols {
       $perc: unquote((100 / ($num-cols / $i)) + "%");
       @include grid-classes("s", $i, $perc);
+      // @include grid-classes("s", $i, unquote(50+"%"));
       $i: $i + 1;
+    
     }
+    
 
     @media #{$medium-and-up} {
 
@@ -111,6 +114,7 @@
         @include grid-classes("m", $i, $perc);
         $i: $i + 1;
       }
+      
     }
 
     @media #{$large-and-up} {
