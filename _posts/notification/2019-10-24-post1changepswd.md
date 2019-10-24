@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[通知公告] 加强统一身份认证密码强度"
+title: "[通知公告] 提高统一身份认证密码强度"
 author: soowin
 categories: notification
 ---
