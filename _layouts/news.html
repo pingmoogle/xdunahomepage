@@ -23,7 +23,7 @@ layout: default
           </a>
           <div class="post-abstract">
             {{ post.content | strip_html | truncate: 340, '...'}}
-            </div> <a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a>
+            </div> <a href="{{ post.url | prepend: site.baseurl }}">[Read More | 阅读全文]</a>
         {%- if site.show_excerpts -%}
         {{ post.excerpt }}
         {%- endif -%}

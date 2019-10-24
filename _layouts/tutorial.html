@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="section no-pad-bot" id="index-banner">
+    
+</div>
+<br>
+
+<div class="home container">
+
+    {%- if site.posts.size > 0 -%}
+    <ul class="post-list">
+        {%- for post in site.categories['tutorial'] -%}
+        <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span><br>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+            <div class="post-abstract">
+                {{ post.content  | truncate: 340, '......'}}
+            </div><a href="{{ post.url | prepend: site.baseurl }}">[Read More | 阅读全文]</a>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+        </li>
+        <br>
+        {%- endfor -%}
+    </ul>
+    {%- endif -%}
+</div>

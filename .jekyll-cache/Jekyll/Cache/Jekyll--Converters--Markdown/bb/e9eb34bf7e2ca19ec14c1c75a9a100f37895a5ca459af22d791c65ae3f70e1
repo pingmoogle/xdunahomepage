@@ -1,0 +1,51 @@
+I"�<p>一、如何购买翼讯</p>
+
+<p>教学区与宿舍区用户：请在一站式网上办事大厅内找到缴费平台（https://payment.xidian.edu.cn/NetWorkUI/slogin.html），登录后选择电信翼讯，根据页面提示选择套餐购买即可；</p>
+
+<p>家属区、社区用户：请前往信息网络技术中心办理</p>
+
+<p>二、购买翼讯后如何使用</p>
+
+<p>（1）使用网线一端插到端口，一端连接电脑，在网络设置中新建宽带PPPoE连接，输入账号：t学号@dx，密码：默认身份证后六位</p>
+
+<p>（2）使用路由器时，把网线一端插到端口，一端插到路由器WAN口，在路由器的设置页面中配置上网方式为宽带PPPoE拨号，输入账号：t学号@dx，密码：默认身份证后六位</p>
+
+<p>（3）使用xd-yixun，连接成功后，如果弹出登陆页面，请在账号栏输入：t学号，密码：默认身份证后六位</p>
+
+<p>三、购买套餐出现问题</p>
+
+<p>（1）购买时提示订单正在处理中：上一次的订单没有缴费就退出了，系统没反应过来。支付未成功的订单不会扣钱。只要20分钟后重新开一个订单重新缴费即可；</p>
+
+<p>（2）购买一个套餐之后想要更换为其他套餐：不能更换</p>
+
+<p>（3）购买套餐之后想要退款：无法退款</p>
+
+<p>（4）填写账号时提示账号不存在：购买时请输入：t学号</p>
+
+<p>四、使用翼讯时出现问题：</p>
+
+<p>（1）实际网速达不到预期标准：购买翼讯后请使用翼讯账号联网：t学号@dx</p>
+
+<p>（2）电脑联网时提示错误629：请确认账号填写正确：t学号@dx，密码默认为身份证后六位，以X结尾的请输入大写X</p>
+
+<p>（3）电脑联网时提示错误651（调制解调器错误）：请首先更换电脑和网线重试，如果问题依然存在，则报修（wlbx.xidian.edu.cn）</p>
+
+<p>（4）提示已有设备在线：同一翼讯账号仅能同时供一台电脑、手机或路由器使用。如需多台设备同时使用，建议连接路由器</p>
+
+<p>五、其他翼讯相关问题</p>
+
+<p>（1）如何查看到期时间：浏览器打开zfw.xidian.edu.cn ，账号输入：t学号，密码：默认身份证后六位。在账户信息中找到结算日期，即为到期时间</p>
+
+<p>（2）如何更改翼讯密码：浏览器打开zfw.xidian.edu.cn ，账号输入：t学号，密码：默认身份证后六位。点击右上角的用户 → 修改密码，根据提示操作</p>
+
+<script type="text/javascript" src="scripts/pdfobject/pdfobject.js"></script>
+
+<script type="text/javascript">
+window.onload = function (){
+    var success = new PDFObject({ url: "\res\docs\qna.pdf" ,pdfOpenParams: { scrollbars: '0', toolbar: '0', statusbar: '0'}}).embed("pdf1");
+};
+</script>
+
+<p> </p>
+<div id="pdf1" style="width:700px; height:600px;">It appears you don't have Adobe Reader or PDF support in this web browser. <a href="\res\docs\qna.pdf">Click here to download the PDF</a></div>
+:ET
