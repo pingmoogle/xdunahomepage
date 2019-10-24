@@ -65,13 +65,13 @@ nav {
     padding: 0;
 
     &.center {
-      left: 50%;
-      transform: translateX(-50%);
+      left: 40%;
+      // transform: translateX(-50%);
     }
 
     @media #{$medium-and-down} {
       left: 50%;
-      transform: translateX(-50%);
+      // transform: translateX(-50%);
 
       &.left, &.right {
         padding: 0;
