@@ -20,7 +20,7 @@ layout: default
     <!--   Icon Section   -->
     <div class="row">
       <div class="col s8 m3">
-        <div class="icon-block center">
+        <div class="icon-block center" onclick="window.open('/tutorial/')">
           <img class="center" src="res\pics\question.png"></img>
           <h5 class="center">网络使用答疑</h5>
 
@@ -102,29 +102,35 @@ layout: default
 
 </div>
 
-
-<!-- <div style="background: rgb(255, 255, 255)">
-  <div class="container last-post">
-    <section>
-      <h5>新闻与活动</h5>
-      <ul class="collection">
-        {% for post in site.posts %}
-        <li class="collection-item avatar">
-          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-          <div class="date-post">{{ post.date | date: date_format }}</div>
-          <span class="title"><a class="post-link"
-              href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-          <p>
-            {{ post.content | truncatewords: 10 }}
-          </p>
-          <a href="{{ post.url | relative_url }}" class="secondary-content"><i
-              class="material-icons">navigate_next</i></a>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br><br>
+    <h4 class="header left dark-text">📢 通知与公告</h4>
   </div>
-</div> -->
+</div>
+<br><br><br>
+<div class="home container">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {%- if site.posts.size > 0 -%}
+  <ul class="post-list">
+    {%- for post in site.categories['notification'] -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+</div>
 
 <div class="section no-pad-bot" id="index-banner">
   <div class="container">
@@ -139,65 +145,21 @@ layout: default
   {%- endif -%}
 
   {%- if site.posts.size > 0 -%}
-  <!-- <h2 class="header left dark-text">{{ page.list_title | default: "Posts" }}</h2> -->
   <ul class="post-list">
-    {%- for post in site.posts -%}
+    {%- for post in site.categories['news'] -%}
     <li>
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <p>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
-      </p>
       {%- if site.show_excerpts -%}
       {{ post.excerpt }}
       {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
-
-
   {%- endif -%}
-
 </div>
 
 
-
-
-<div class="section">
-  <div class="row">
-    <div class="carousel carousel-slider center" data-indicators="true" data-namespace="DIVcarouselcarousel-slider1"
-      style="height: 400px;">
-      <!-- <div class="carousel-fixed-item center with-indicators">
-          <a class="btn waves-effect white grey-text darken-text-2">button</a>
-        </div> -->
-      <div class="carousel-item blue white-text active center" href="#one!"
-        style="z-index: 0; opacity: 1; display: block; transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px);">
-        <h2>First Panel</h2>
-        <p class="white-text">This is your first panel</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#two!"
-        style="transform: translateX(0px) translateX(953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
-        <h2>Second Panel</h2>
-        <p class="white-text">This is your second panel</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#three!"
-        style="transform: translateX(0px) translateX(-1907.81px) translateZ(0px); z-index: -2; opacity: 1; display: block;">
-        <h2>Third Panel</h2>
-        <p class="white-text">This is your third panel</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#four!"
-        style="transform: translateX(0px) translateX(-953.906px) translateZ(0px); z-index: -1; opacity: 1; display: block;">
-        <h2>Fourth Panel</h2>
-        <p class="white-text">This is your fourth panel</p>
-      </div>
-      <!-- <ul class="indicators">
-          <li class="indicator-item active"></li>
-          <li class="indicator-item"></li>
-          <li class="indicator-item"></li>
-          <li class="indicator-item"></li>
-        </ul> -->
-    </div>
-  </div>
-</div>
