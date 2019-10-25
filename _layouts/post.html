@@ -20,8 +20,9 @@ comments: true
           {%- endif -%}</p>
       </header>
 
-      <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
+      <div class="post-content e-content" itemprop="articleBody" >
+        <h4 style="line-height: 1.5;">{{ content }}</h4>
+        
       </div>
 
       <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
