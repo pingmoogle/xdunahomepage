@@ -5,7 +5,7 @@ author: soowin
 categories: tutorial
 ---
 
-## 一、Apple Music 学生优惠
+ 一、Apple Music 学生优惠
 需要准备：一个iCloud账户、一个用于注册UNiDAYS账户的邮箱、你的edu邮箱  
 打开Apple Music，在会员购买页面选择学生资格（5元/月），将会跳转到UNiDAYS进行验证，接下来要进行以下操作：  
 1、使用一个普通的邮箱注册一个UNiDAYS账户
@@ -15,18 +15,18 @@ categories: tutorial
 5、提示资格验证通过，付款5元
 
 
-## 二、JetBrains 全家桶
+ 二、JetBrains 全家桶
 https://account.jetbrains.com/login 在JetBrains官网使用edu邮箱注册账户，安装软件时，使用edu邮箱账户激活。
 
 
-## 三、Office 365 A1
+ 三、Office 365 A1
 
 
-## 四、AutoDesk 服务
+ 四、AutoDesk 服务
 
 
-## 五、GitHub 学生验证
+ 五、GitHub 学生验证
 
 
-## 六、
+ 六、
 
