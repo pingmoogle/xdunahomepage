@@ -27,16 +27,24 @@ comments: true
 
       <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
     </article>
+    <br>
+    <br><p><font size='5'>💬</font>&emsp;匿名的评论：昵称、邮箱、网址均为选填</p><br>
 
-    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="comment"></div>
     <script>
-        new Valine({
-            el: '#vcomments',
-            appId: '<0N64wilsdBeQzKriTKgTKrXF-gzGzoHsz>',
-            appKey: '<hcTarGwMwrFESarkDCsYVcEg>'
-        })
-    </script>
-
+      var valine = new Valine();
+      valine.init({
+          el:'#comment',
+          appId:'0N64wilsdBeQzKriTKgTKrXF-gzGzoHsz',
+          appKey:'hcTarGwMwrFESarkDCsYVcEg',
+          notify:true,
+          path: '{{ page.url }}',
+          placeholder:'在这里写评论'
+          
+      })
+  </script>
 
   </div>
 </div>
