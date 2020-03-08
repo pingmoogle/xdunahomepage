@@ -1,4 +1,8 @@
-# Jekyll Materialize Starter Template v0.1
+# XDUNA website
+一个使用jekyll搭建的博客网站，加入了一些其他实用性功能。
+
+
+## 主题：Jekyll Materialize Starter Template v0.1
 
 *A Site Starter Materialize Templates.
 
@@ -7,7 +11,7 @@ The theme is a fork of the [minima][1]
 ![minima theme preview](/screenshot.png)
 
 
-# License
+## Jekyll License
 
 The theme is available as so I use this source [MIT License][2].
 
