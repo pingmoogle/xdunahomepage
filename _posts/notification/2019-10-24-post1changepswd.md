@@ -27,7 +27,7 @@ categories: notification
 2.忘记密码情况下，登录http://ids.xidian.edu.cn/authserver/login 或者校内任意系统，在统一身份认证界面点击忘记密码按钮，通过手机、邮箱、密保问题三种方式其中任何一种方式找回密码。
 
 如果忘记或更改绑定邮箱和手机，请拨打88201650。 
- 
+
 <br><br><br><br>
 <p align="right">信息网络技术中心</p>
 <p align="right">2019年10月22日</p>
