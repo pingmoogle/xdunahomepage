@@ -1,4 +1,4 @@
-# XDUNA website
+# [XDUNA Website](https://soowin.github.io)
 一个使用jekyll搭建的博客网站，加入了一些其他实用性功能。
 
 
